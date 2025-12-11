@@ -34,7 +34,7 @@ function Header() {
       <header className={`header ${scrolled ? 'header-scrolled' : ''} ${!isHome ? 'header-solid' : ''}`}>
         <div className="header-container">
           <Link to="/" className="artist-name-link">
-            <h1 className="artist-name">DALTON <br />ROMÃO</h1>
+            <h1 className="artist-name">DALTON ROMÃO</h1>
           </Link>
           
           <div className="header-actions">

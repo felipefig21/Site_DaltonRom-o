@@ -14,6 +14,7 @@ function AboutSection() {
 
         <div className="about-text">
           <h2 className="about-title animate-on-scroll fade-in-right">ARTIST STATEMENT</h2>
+          
           <p className="about-description animate-on-scroll fade-in-right delay-100">
             Eu trabalho com imagens porque sempre me interessei por aquilo que elas carregam: memórias, marcas do tempo, restos de outras histórias. Uso a colagem expandida para juntar fotos, pedaços de impressos, sujeiras gráficas, tipografias, detalhes que passam despercebidos.
           </p>
@@ -29,6 +30,7 @@ function AboutSection() {
           <p className="about-description animate-on-scroll fade-in-right delay-400">
             O que me move é a memória gráfica — aquilo que persiste, que desgasta, que sobra. A partir desses restos e vestígios, tento criar superfícies que funcionem como uma espécie de mapa do olhar: lugares onde a memória vira material de trabalho e onde o ruído, o erro e a instabilidade são parte natural da linguagem.
           </p>
+
         </div>
       </div>
     </section>
