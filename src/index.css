@@ -1,0 +1,215 @@
+/* Fontes Trade Gothic */
+@font-face {
+  font-family: 'Trade Gothic Bold Condensed';
+  src: url('/Fontes/TradeGothicLTStd-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trade Gothic Condensed';
+  src: url('/Fontes/TradeGothicLTStd-Extended.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trade Gothic Bold Extended';
+  src: url('/Fontes/TradeGothicLTStd-BoldExt.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trade Gothic Oblique';
+  src: url('/Fontes/TradeGothicLTStd-Obl.otf') format('opentype');
+  font-weight: normal;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'Trade Gothic Bold Oblique';
+  src: url('/Fontes/TradeGothicLTStd-Bd2Obl.otf') format('opentype');
+  font-weight: bold;
+  font-style: oblique;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trade Gothic Condensed', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #2B2B2B;
+}
+
+/* Estilos para títulos - Bold Condensed 20px */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Trade Gothic Bold Condensed', Arial, sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+/* Estilos para textos - Condensed 18px */
+p, span, a, li, label, input, textarea, button {
+  font-family: 'Trade Gothic Condensed', Arial, sans-serif;
+  font-size: 18px;
+}
+
+/* Animações de Scroll */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInRotate {
+  from {
+    opacity: 0;
+    transform: translateY(50px) rotate(-5deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes flipIn {
+  from {
+    opacity: 0;
+    transform: perspective(1000px) rotateY(-90deg) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(1000px) rotateY(0deg) translateY(0);
+  }
+}
+
+@keyframes flipInX {
+  from {
+    opacity: 0;
+    transform: perspective(1000px) rotateX(-90deg) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(1000px) rotateX(0deg) scale(1);
+  }
+}
+
+/* Classes para aplicar animações */
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-on-scroll.animated {
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-in-up.animated {
+  animation-name: fadeInUp;
+}
+
+.fade-in-down.animated {
+  animation-name: fadeInDown;
+}
+
+.fade-in-left.animated {
+  animation-name: fadeInLeft;
+}
+
+.fade-in-right.animated {
+  animation-name: fadeInRight;
+}
+
+.scale-in.animated {
+  animation-name: scaleIn;
+}
+
+.slide-rotate.animated {
+  animation-name: slideInRotate;
+}
+
+.flip-in.animated {
+  animation-name: flipIn;
+  animation-duration: 0.7s;
+}
+
+.flip-in-x.animated {
+  animation-name: flipInX;
+  animation-duration: 0.7s;
+}
+
+/* Delays para efeitos em cascata */
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}

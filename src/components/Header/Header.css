@@ -1,0 +1,281 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 75%, transparent 100%);
+  z-index: 1000;
+  transition: all 0.4s ease;
+}
+
+/* Header com fundo quando não está na home ou após scroll */
+.header-solid,
+.header-scrolled {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.25), 0 3px 15px rgba(0, 0, 0, 0.18);
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Nome do artista */
+.artist-name-link {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.artist-name-link:hover {
+  transform: scale(1.05);
+}
+
+.artist-name {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.artist-name:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Cor do nome quando tem fundo */
+.header-solid .artist-name,
+.header-scrolled .artist-name {
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.header-solid .artist-name:hover,
+.header-scrolled .artist-name:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Ações do header */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Botão de contato estilizado */
+.contact-btn {
+  position: relative;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 8px 24px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.contact-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease, height 0.5s ease;
+  z-index: -1;
+}
+
+.contact-btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.contact-btn:hover {
+  color: #2B2B2B;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(255, 255, 255, 0.4);
+}
+
+/* Estilo do botão quando header tem fundo */
+.header-solid .contact-btn,
+.header-scrolled .contact-btn {
+  background: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.header-solid .contact-btn::before,
+.header-scrolled .contact-btn::before {
+  background: #ffffff;
+}
+
+.header-solid .contact-btn:hover,
+.header-scrolled .contact-btn:hover {
+  color: #2B2B2B;
+  border-color: #ffffff;
+  box-shadow: 0 6px 25px rgba(255, 255, 255, 0.4);
+}
+
+/* Botão de menu hambúrguer */
+.menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: transform 0.3s ease;
+  z-index: 10;
+}
+
+.menu-btn:hover {
+  transform: scale(1.1);
+}
+
+.menu-icon {
+  width: 25px;
+  height: 2.5px;
+  background: #ffffff;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu-btn:hover .menu-icon {
+  background: #ffffff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  filter: brightness(1.2);
+}
+
+/* Cor das barras quando header tem fundo */
+.header-solid .menu-icon,
+.header-scrolled .menu-icon {
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-solid .menu-btn:hover .menu-icon,
+.header-scrolled .menu-btn:hover .menu-icon {
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  filter: brightness(1.2);
+}
+
+/* Animação do hambúrguer ao hover */
+.menu-btn:hover .menu-icon:first-child {
+  transform: translateX(-5px);
+}
+
+.menu-btn:hover .menu-icon:last-child {
+  transform: translateX(5px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 0;
+  }
+
+  .header-container {
+    padding: 0 20px;
+  }
+
+  .artist-name {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .header-actions {
+    gap: 20px;
+  }
+
+  .contact-btn {
+    padding: 7px 20px;
+    font-size: 12px;
+  }
+
+  .menu-icon {
+    width: 22px;
+    height: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0 15px;
+  }
+
+  .artist-name {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .header-actions {
+    gap: 15px;
+  }
+
+  .contact-btn {
+    padding: 6px 18px;
+    font-size: 11px;
+  }
+
+  .menu-icon {
+    width: 20px;
+  }
+}
+
+/* Adicionar efeito glow no botão de contato (opcional, mas fica incrível) */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 4px 25px rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes glowDark {
+  0%, 100% {
+    box-shadow: 0 4px 15px rgba(43, 43, 43, 0.1);
+  }
+  50% {
+    box-shadow: 0 4px 25px rgba(43, 43, 43, 0.3);
+  }
+}
+
+.contact-btn:hover {
+  animation: glow 2s infinite;
+}
+
+/* Manter animação glow quando header tem fundo */
+.header-solid .contact-btn:hover,
+.header-scrolled .contact-btn:hover {
+  animation: glowDark 2s infinite;
+}

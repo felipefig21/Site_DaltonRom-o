@@ -1,0 +1,115 @@
+.about-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.about-page-content {
+  padding: 120px 40px 80px;
+}
+
+.about-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-page-title {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 60px;
+  color: #1a1a1a;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.about-page-section {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.about-page-image {
+  flex: 0 0 400px;
+  width: 400px;
+  height: auto;
+  display: block;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.about-page-text {
+  flex: 1;
+}
+
+.about-page-text h2 {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+  font-weight: 400;
+}
+
+.about-page-text h2:first-child {
+  margin-top: 0;
+}
+
+.about-page-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-page-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-page-text ul li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.about-page-text ul li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #1a1a1a;
+}
+
+/* Responsividade - Tablet */
+@media (max-width: 1024px) {
+  .about-page-section {
+    flex-direction: column;
+  }
+  
+  .about-page-image {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+/* Responsividade - Celular */
+@media (max-width: 768px) {
+  .about-page-content {
+    padding: 100px 20px 50px;
+  }
+  
+  .about-page-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .about-page-text h2 {
+    font-size: 20px;
+  }
+  
+  .about-page-text p,
+  .about-page-text ul li {
+    font-size: 14px;
+  }
+}

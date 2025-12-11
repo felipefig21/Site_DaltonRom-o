@@ -1,0 +1,19 @@
+.featured-art {
+  width: 100%;
+  padding: 0 0px;
+  margin: 80px 0;
+}
+
+.featured-art-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .featured-art {
+    padding: 0 20px;
+    margin: 50px 0;
+  }
+}

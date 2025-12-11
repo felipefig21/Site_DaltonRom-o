@@ -1,0 +1,66 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 0;
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+/* Tablets e dispositivos médios */
+@media (max-width: 1024px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .hero-image {
+    object-fit: contain;
+    object-position: center center;
+  }
+}
+
+/* Tablets pequenos */
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+    min-height: 400px;
+  }
+
+  .hero-image {
+    object-fit: contain;
+    object-position: center center;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+  .hero {
+    height: 60vh;
+    min-height: 350px;
+  }
+
+  .hero-image {
+    object-fit: contain;
+    object-position: center center;
+  }
+}
+
+/* Smartphones pequenos */
+@media (max-width: 375px) {
+  .hero {
+    height: 50vh;
+    min-height: 300px;
+  }
+
+  .hero-image {
+    object-fit: contain;
+    object-position: center center;
+  }
+}
