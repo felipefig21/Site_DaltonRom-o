@@ -1,37 +1,115 @@
 /* Fontes Trade Gothic */
-@font-face {
-  font-family: 'Trade Gothic Bold Condensed';
-  src: url('/Fontes/TradeGothicLTStd-Bold.otf') format('opentype');
-  font-weight: bold;
-  font-style: normal;
-}
 
+/* Regular */
 @font-face {
-  font-family: 'Trade Gothic Condensed';
-  src: url('/Fontes/TradeGothicLTStd-Extended.otf') format('opentype');
+  font-family: 'Trade Gothic';
+  src: url('/Fontes/TradeGothicLTStd.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
+/* Regular Oblique */
 @font-face {
-  font-family: 'Trade Gothic Bold Extended';
-  src: url('/Fontes/TradeGothicLTStd-BoldExt.otf') format('opentype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Trade Gothic Oblique';
+  font-family: 'Trade Gothic';
   src: url('/Fontes/TradeGothicLTStd-Obl.otf') format('opentype');
   font-weight: normal;
   font-style: oblique;
 }
 
+/* Light */
 @font-face {
-  font-family: 'Trade Gothic Bold Oblique';
+  font-family: 'Trade Gothic';
+  src: url('/Fontes/TradeGothicLTStd-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Light Oblique */
+@font-face {
+  font-family: 'Trade Gothic';
+  src: url('/Fontes/TradeGothicLTStd-LightObl.otf') format('opentype');
+  font-weight: 300;
+  font-style: oblique;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Trade Gothic';
+  src: url('/Fontes/TradeGothicLTStd-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Bold Oblique */
+@font-face {
+  font-family: 'Trade Gothic';
+  src: url('/Fontes/TradeGothicLTStd-BoldObl.otf') format('opentype');
+  font-weight: bold;
+  font-style: oblique;
+}
+
+/* Bold 2 */
+@font-face {
+  font-family: 'Trade Gothic Bd2';
+  src: url('/Fontes/TradeGothicLTStd-Bd2.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Bold 2 Oblique */
+@font-face {
+  font-family: 'Trade Gothic Bd2';
   src: url('/Fontes/TradeGothicLTStd-Bd2Obl.otf') format('opentype');
   font-weight: bold;
   font-style: oblique;
+}
+
+/* Condensed 18 */
+@font-face {
+  font-family: 'Trade Gothic Condensed';
+  src: url('/Fontes/TradeGothicLTStd-Cn18.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Condensed 18 Oblique */
+@font-face {
+  font-family: 'Trade Gothic Condensed';
+  src: url('/Fontes/TradeGothicLTStd-Cn18Obl.otf') format('opentype');
+  font-weight: normal;
+  font-style: oblique;
+}
+
+/* Bold Condensed 20 */
+@font-face {
+  font-family: 'Trade Gothic Bold Condensed';
+  src: url('/Fontes/TradeGothicLTStd-BdCn20.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Bold Condensed 20 Oblique */
+@font-face {
+  font-family: 'Trade Gothic Bold Condensed';
+  src: url('/Fontes/TradeGothicLTStd-BdCn20Obl.otf') format('opentype');
+  font-weight: bold;
+  font-style: oblique;
+}
+
+/* Extended */
+@font-face {
+  font-family: 'Trade Gothic Extended';
+  src: url('/Fontes/TradeGothicLTStd-Extended.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Bold Extended */
+@font-face {
+  font-family: 'Trade Gothic Bold Extended';
+  src: url('/Fontes/TradeGothicLTStd-BoldExt.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 * {
@@ -40,20 +118,24 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Trade Gothic Condensed', Arial, sans-serif;
   background-color: #ffffff;
   color: #2B2B2B;
 }
 
-/* Estilos para títulos - Bold Condensed 20px */
+/* Estilos para titulos - Bold Condensed 20 */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Trade Gothic Bold Condensed', Arial, sans-serif;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: bold;
 }
 
-/* Estilos para textos - Condensed 18px */
+/* Estilos para textos - Condensed 18 */
 p, span, a, li, label, input, textarea, button {
   font-family: 'Trade Gothic Condensed', Arial, sans-serif;
   font-size: 18px;

@@ -21,6 +21,9 @@ function MobileMenu({ isOpen, onClose }) {
             <Link to="/galeria" onClick={onClose}>GALERIA</Link>
           </li>
           <li>
+            <Link to="/em-espaco" onClick={onClose}>EM ESPAÇO</Link>
+          </li>
+          <li>
             <Link to="/sobre" onClick={onClose}>SOBRE</Link>
           </li>
         </ul>

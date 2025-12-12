@@ -4,9 +4,9 @@ import heroimg from './grav150.png'
 function Hero() {
   return (
     <section className="hero">
-      <img 
-        src={heroimg} 
-        alt="Arte em destaque" 
+      <img
+        src={heroimg}
+        alt="Arte em destaque"
         className="hero-image"
         onError={(e) => {
           console.log('Erro ao carregar imagem')

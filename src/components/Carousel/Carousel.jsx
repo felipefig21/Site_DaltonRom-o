@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './Carousel.css'
-import { artworks } from '../../data/artworks'
+import { imagensCarrossel } from '../../data/artworks'
 import Lightbox from '../Lightbox/Lightbox' // Importar o Lightbox
 
 function Carousel() {
@@ -11,7 +11,7 @@ function Carousel() {
   const itemsPerPage = 3
 
   const nextSlide = () => {
-    if (currentIndex < artworks.length - itemsPerPage) {
+    if (currentIndex < imagensCarrossel.length - itemsPerPage) {
       setCurrentIndex(currentIndex + 1)
     }
   }
@@ -33,11 +33,11 @@ function Carousel() {
   }
 
   const showNextArtwork = () => {
-    setSelectedArtworkIndex((prevIndex) => (prevIndex + 1) % artworks.length)
+    setSelectedArtworkIndex((prevIndex) => (prevIndex + 1) % imagensCarrossel.length)
   }
 
   const showPrevArtwork = () => {
-    setSelectedArtworkIndex((prevIndex) => (prevIndex - 1 + artworks.length) % artworks.length)
+    setSelectedArtworkIndex((prevIndex) => (prevIndex - 1 + imagensCarrossel.length) % imagensCarrossel.length)
   }
 
   return (
@@ -58,7 +58,7 @@ function Carousel() {
               transform: `translateX(-${currentIndex * (100 / itemsPerPage)}%)`
             }}
           >
-            {artworks.map((artwork, index) => (
+            {imagensCarrossel.map((artwork, index) => (
               <div
                 key={artwork.id}
                 className="carousel-item"
@@ -77,7 +77,7 @@ function Carousel() {
         <button
           className="carousel-btn next"
           onClick={nextSlide}
-          disabled={currentIndex >= artworks.length - itemsPerPage}
+          disabled={currentIndex >= imagensCarrossel.length - itemsPerPage}
         >
           ›
         </button>
@@ -85,7 +85,7 @@ function Carousel() {
 
       {isLightboxOpen && selectedArtworkIndex !== null && (
         <Lightbox
-          artwork={artworks[selectedArtworkIndex]}
+          artwork={imagensCarrossel[selectedArtworkIndex]}
           onClose={closeLightbox}
           onNext={showNextArtwork}
           onPrev={showPrevArtwork}

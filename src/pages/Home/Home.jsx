@@ -6,6 +6,7 @@ import BentoGrid from '../../components/BentoGrid/BentoGrid'
 import ArtDetail from '../../components/ArtDetail/ArtDetail'
 import Carousel from '../../components/Carousel/Carousel'
 import Footer from '../../components/Footer/Footer'
+import WhatsAppButton from '../../components/WhatsAppButton/WhatsAppButton'
 import useScrollAnimation from '../../hooks/useScrollAnimation'
 import './Home.css'
 
@@ -29,6 +30,7 @@ function Home() {
       />
       <Carousel />
       <Footer />
+      <WhatsAppButton />
     </div>
   )
 }

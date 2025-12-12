@@ -28,10 +28,12 @@ function Header() {
   
   // Determinar se está na home
   const isHome = location.pathname === '/'
-  
+  const isGallery = location.pathname === '/galeria'
+  const isEmEspaco = location.pathname === '/em-espaco'
+
   return (
     <>
-      <header className={`header ${scrolled ? 'header-scrolled' : ''} ${!isHome ? 'header-solid' : ''}`}>
+      <header className={`header ${scrolled && !isGallery && !isEmEspaco ? 'header-scrolled' : ''} ${!isHome && !isGallery && !isEmEspaco ? 'header-solid' : ''} ${isGallery || isEmEspaco ? 'header-black' : ''}`}>
         <div className="header-container">
           <Link to="/" className="artist-name-link">
             <h1 className="artist-name">DALTON ROMÃO</h1>

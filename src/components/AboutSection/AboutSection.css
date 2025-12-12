@@ -11,7 +11,7 @@
   margin: 0 auto;
   display: flex;
   gap: 60px;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .about-image-wrapper {
@@ -27,7 +27,8 @@
 }
 
 .about-text {
-  flex: 1;
+  width: 600px;
+  max-width: 1000px
 }
 
 .about-title {
@@ -39,7 +40,7 @@
 }
 
 .about-description {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.8;
   color: #2B2B2B;
   margin-bottom: 20px;

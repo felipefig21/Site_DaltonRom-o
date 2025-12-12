@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import Lightbox from '../../components/Lightbox/Lightbox'
+import WhatsAppButton from '../../components/WhatsAppButton/WhatsAppButton'
 import { artworks } from '../../data/artworks'
 import useScrollAnimation from '../../hooks/useScrollAnimation'
 import './Gallery.css'
@@ -49,10 +50,8 @@ function Gallery() {
       
       <main className="gallery-content">
         <div className="gallery-header">
-          <h1 className="gallery-page-title">Galeria</h1>
-          <p className="gallery-subtitle">
-            {artworks.length} {artworks.length === 1 ? 'obra' : 'obras'}
-          </p>
+          <h1 className="gallery-page-title">GALERIA</h1>
+          
         </div>
 
         {/* Grid de obras */}
@@ -77,12 +76,13 @@ function Gallery() {
           ))}
         </div>
       </main>
-      
+
       <Footer />
+      <WhatsAppButton />
 
       {/* Lightbox */}
       {selectedArtwork && (
-        <Lightbox 
+        <Lightbox
           artwork={selectedArtwork}
           onClose={closeLightbox}
           onNext={nextArtwork}

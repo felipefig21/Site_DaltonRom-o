@@ -13,7 +13,7 @@ function Footer() {
         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="social-icon-circle">
           <FaInstagram />
         </a>
-        <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <a href="https://wa.me/552199448-8270" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
           <FaWhatsapp />
         </a>
         <a href="mailto:contato@daltonromao.com" aria-label="Email">

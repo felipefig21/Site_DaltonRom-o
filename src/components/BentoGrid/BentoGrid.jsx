@@ -1,19 +1,38 @@
+import { useState } from 'react'
 import './BentoGrid.css'
-import { artworks } from '../../data/artworks'
+import { imagensBentoGrid } from '../../data/artworks'
+import Lightbox from '../Lightbox/Lightbox'
 
 function BentoGrid() {
-  // Pegar as primeiras 6 obras para o bento grid
-  const displayArtworks = artworks.slice(0, 6)
+  const [selectedIndex, setSelectedIndex] = useState(null)
+
+  // Usar as imagens específicas do BentoGrid
+  const displayArtworks = imagensBentoGrid
+
+  const handleOpen = (index) => {
+    setSelectedIndex(index)
+  }
+
+  const handleClose = () => {
+    setSelectedIndex(null)
+  }
+
+  const handleNext = () => {
+    setSelectedIndex((prev) => (prev + 1) % displayArtworks.length)
+  }
+
+  const handlePrev = () => {
+    setSelectedIndex((prev) => (prev - 1 + displayArtworks.length) % displayArtworks.length)
+  }
 
   return (
     <section className="bento-section">
-      
-
       <div className="bento-grid animate-on-scroll scale-in delay-200">
         {displayArtworks.map((artwork, index) => (
           <div
             key={artwork.id}
             className={`bento-item bento-item-${index + 1} animate-on-scroll flip-in delay-${(index * 100 + 100)}`}
+            onClick={() => handleOpen(index)}
           >
             <div className="bento-item-image-wrapper">
               <img
@@ -31,6 +50,15 @@ function BentoGrid() {
           </div>
         ))}
       </div>
+
+      {selectedIndex !== null && (
+        <Lightbox
+          artwork={displayArtworks[selectedIndex]}
+          onClose={handleClose}
+          onNext={handleNext}
+          onPrev={handlePrev}
+        />
+      )}
     </section>
   )
 }
