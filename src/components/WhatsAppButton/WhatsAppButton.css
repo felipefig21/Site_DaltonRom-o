@@ -1,0 +1,119 @@
+.whatsapp-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  z-index: 9999;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+.whatsapp-button:hover {
+  animation: floatHover 1.5s ease-in-out infinite;
+  box-shadow: 0 8px 35px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-icon {
+  font-size: 32px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover .whatsapp-icon {
+  transform: rotate(15deg);
+}
+
+/* Tooltip */
+.whatsapp-tooltip {
+  position: absolute;
+  right: 75px;
+  background: #2B2B2B;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateX(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button:hover .whatsapp-tooltip {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Animação de flutuação - simula movimento na água */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) translateX(3px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(-5px) translateX(-3px) rotate(-1deg);
+  }
+  75% {
+    transform: translateY(-12px) translateX(2px) rotate(1deg);
+  }
+}
+
+/* Animação de flutuação no hover - mais rápida */
+@keyframes floatHover {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg) scale(1.1);
+  }
+  25% {
+    transform: translateY(-8px) translateX(4px) rotate(3deg) scale(1.1);
+  }
+  50% {
+    transform: translateY(-4px) translateX(-4px) rotate(-2deg) scale(1.1);
+  }
+  75% {
+    transform: translateY(-10px) translateX(3px) rotate(2deg) scale(1.1);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .whatsapp-button {
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .whatsapp-icon {
+    font-size: 28px;
+  }
+
+  .whatsapp-tooltip {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .whatsapp-icon {
+    font-size: 26px;
+  }
+}
