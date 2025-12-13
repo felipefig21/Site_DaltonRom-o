@@ -101,19 +101,95 @@
   .carousel-item {
     min-width: 50%;
   }
+
+  .carousel-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 56px;
+    margin-top: 180px;
+  }
+
+  .carousel-image {
+    height: 400px;
+  }
 }
 
 /* Responsividade - Celular */
 @media (max-width: 768px) {
-  .carousel-item {
-    min-width: 100%;
-  }
-  
   .carousel-section {
     padding: 50px 20px;
   }
-  
+
   .carousel-title {
     font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .carousel-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .carousel-track-container {
+    order: 1;
+    width: 100%;
+  }
+
+  .carousel-item {
+    min-width: 100%;
+  }
+
+  .carousel-btn {
+    order: 2;
+    width: 50px;
+    height: 50px;
+    font-size: 48px;
+    margin-top: 0;
+  }
+
+  .carousel-image {
+    height: 350px;
+  }
+
+  .carousel-info h3 {
+    font-size: 16px;
+  }
+
+  .carousel-info p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-section {
+    padding: 40px 15px;
+  }
+
+  .carousel-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .carousel-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 40px;
+  }
+
+  .carousel-image {
+    height: 280px;
+  }
+
+  .carousel-info {
+    margin-top: 12px;
+  }
+
+  .carousel-info h3 {
+    font-size: 15px;
+  }
+
+  .carousel-info p {
+    font-size: 12px;
   }
 }

@@ -11,9 +11,30 @@
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 1024px) {
+  .featured-art {
+    margin: 60px 0;
+  }
+}
+
 @media (max-width: 768px) {
   .featured-art {
     padding: 0 20px;
     margin: 50px 0;
+  }
+
+  .featured-art-image {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-art {
+    padding: 0 15px;
+    margin: 40px 0;
+  }
+
+  .featured-art-image {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
   }
 }

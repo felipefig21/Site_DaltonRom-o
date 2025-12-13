@@ -6,6 +6,7 @@
   min-height: calc(100vh - 120px);
   display: flex;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .art-detail-container {
@@ -147,23 +148,39 @@
 /* Responsividade - Smartphones */
 @media (max-width: 480px) {
   .art-detail {
-    padding: 40px 15px;
+    margin: 0 15px;
+    padding: 30px 15px;
+    border-radius: 6px;
+  }
+
+  .art-detail-container {
+    gap: 15px;
+  }
+
+  .art-detail-image-wrapper {
+    max-width: 280px;
   }
 
   .art-detail-title {
-    font-size: 24px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .art-detail-meta {
+    text-align: center;
   }
 
   .art-detail-artist {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .art-detail-year,
   .art-detail-technique {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .art-detail-description {
     font-size: 13px;
+    text-align: center;
   }
 }

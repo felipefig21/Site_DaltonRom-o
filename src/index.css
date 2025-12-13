@@ -120,12 +120,41 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Trade Gothic Condensed', Arial, sans-serif;
   background-color: #ffffff;
   color: #2B2B2B;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Prevenir overflow em elementos comuns */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container responsivo padrao */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
 }
 
 /* Estilos para titulos - Bold Condensed 20 */

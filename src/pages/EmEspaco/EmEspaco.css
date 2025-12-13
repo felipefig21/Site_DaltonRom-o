@@ -229,17 +229,49 @@
 }
 
 @media (max-width: 480px) {
+  .em-espaco-hero {
+    padding: 70px 15px 50px;
+  }
+
   .em-espaco-title {
-    font-size: 28px;
+    font-size: 26px;
     letter-spacing: 2px;
   }
 
+  .em-espaco-subtitle {
+    font-size: 15px;
+  }
+
+  .espacos-container {
+    padding: 30px 15px 50px;
+  }
+
+  .espaco-item {
+    gap: 25px;
+    margin-bottom: 60px;
+  }
+
+  .espaco-content {
+    padding: 10px;
+  }
+
   .espaco-titulo {
-    font-size: 22px;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .espaco-descricao {
+    font-size: 14px;
+    line-height: 1.7;
   }
 
   .espaco-line {
-    width: 60px;
+    width: 50px;
     height: 3px;
+    margin-bottom: 20px;
+  }
+
+  .espaco-image-wrapper {
+    border-radius: 6px;
   }
 }

@@ -181,15 +181,46 @@
     padding: 60px 15px 30px;
   }
 
+  .gallery-header {
+    margin-bottom: 35px;
+  }
+
   .gallery-page-title {
-    font-size: 28px;
+    font-size: 26px;
+    margin-top: 40px;
+    margin-bottom: 10px;
   }
 
   .gallery-subtitle {
-    font-size: 16px;
+    font-size: 15px;
+  }
+
+  .gallery-grid {
+    gap: 30px;
+  }
+
+  .gallery-item-image-wrapper {
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+  }
+
+  .gallery-item-info {
+    padding: 15px 5px;
   }
 
   .gallery-item-info h3 {
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  .gallery-item-category {
+    font-size: 12px;
+  }
+
+  .gallery-item-year {
+    font-size: 14px;
+  }
+
+  .view-details {
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }

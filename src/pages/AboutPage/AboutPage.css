@@ -99,18 +99,67 @@
   .about-page-content {
     padding: 100px 20px 50px;
   }
-  
+
   .about-page-title {
     font-size: 32px;
     margin-bottom: 40px;
   }
-  
+
+  .about-page-section {
+    gap: 40px;
+  }
+
+  .about-page-text {
+    margin-top: 20px;
+  }
+
   .about-page-text h2 {
     font-size: 20px;
   }
-  
+
   .about-page-text p,
   .about-page-text ul li {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page-content {
+    padding: 90px 15px 40px;
+  }
+
+  .about-page-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+
+  .about-page-section {
+    gap: 30px;
+  }
+
+  .about-page-image {
+    max-width: 100%;
+  }
+
+  .about-page-text {
+    margin-top: 10px;
+  }
+
+  .about-page-text h2 {
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+  }
+
+  .about-page-text p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+  }
+
+  .about-page-text ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
   }
 }

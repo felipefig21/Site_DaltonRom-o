@@ -75,3 +75,43 @@
 .menu-list a:hover {
   color: #E63946;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .mobile-menu {
+    width: 280px;
+    right: -280px;
+    padding: 70px 30px;
+  }
+
+  .menu-list li {
+    margin-bottom: 25px;
+  }
+
+  .menu-list a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-menu {
+    width: 100%;
+    right: -100%;
+    padding: 80px 25px;
+  }
+
+  .close-btn {
+    top: 25px;
+    right: 25px;
+    font-size: 36px;
+  }
+
+  .menu-list li {
+    margin-bottom: 30px;
+  }
+
+  .menu-list a {
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+}

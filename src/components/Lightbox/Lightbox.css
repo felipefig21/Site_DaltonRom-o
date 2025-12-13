@@ -26,13 +26,12 @@
   position: fixed;
   top: 20px;
   right: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  border: none;
   color: white;
-  font-size: 32px;
+  font-size: 36px;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -42,7 +41,7 @@
 }
 
 .lightbox-close:hover {
-  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
   transform: rotate(90deg);
 }
 
@@ -50,13 +49,12 @@
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  border: none;
   color: white;
-  font-size: 48px;
+  font-size: 56px;
   width: 60px;
   height: 60px;
-  border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -66,7 +64,7 @@
 }
 
 .lightbox-nav:hover {
-  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
   transform: translateY(-50%) scale(1.1);
 }
 
@@ -215,13 +213,13 @@
     right: 10px;
     width: 40px;
     height: 40px;
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .lightbox-nav {
     width: 50px;
     height: 50px;
-    font-size: 36px;
+    font-size: 44px;
   }
 
   .lightbox-prev {
@@ -246,21 +244,67 @@
 }
 
 @media (max-width: 480px) {
+  .lightbox-overlay {
+    padding: 5px;
+  }
+
+  .lightbox-content {
+    padding: 15px;
+    gap: 15px;
+    border-radius: 15px;
+  }
+
+  .lightbox-image-container {
+    height: 40vh;
+    border-radius: 10px;
+  }
+
+  .lightbox-close {
+    top: 8px;
+    right: 8px;
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+  }
+
   .lightbox-nav {
-    bottom: 20px;
+    bottom: 15px;
     top: auto;
     transform: none;
+    width: 44px;
+    height: 44px;
+    font-size: 36px;
   }
 
   .lightbox-prev {
-    left: 20px;
+    left: 15px;
   }
 
   .lightbox-next {
-    right: 20px;
+    right: 15px;
   }
 
   .lightbox-nav:hover {
     transform: scale(1.1);
+  }
+
+  .lightbox-title {
+    font-size: 20px;
+  }
+
+  .lightbox-details {
+    padding: 12px 0;
+  }
+
+  .lightbox-details p {
+    font-size: 14px;
+  }
+
+  .lightbox-description {
+    font-size: 14px;
+  }
+
+  .lightbox-info {
+    gap: 12px;
   }
 }
