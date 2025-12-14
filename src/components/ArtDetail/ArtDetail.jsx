@@ -7,9 +7,8 @@ function ArtDetail({ image, title, description, artist, year, technique }) {
         <div className="art-detail-text animate-on-scroll fade-in-left">
           <h2 className="art-detail-title">A PLANIFICAÇÃO DA DESORDEM  </h2>
           <div className="art-detail-meta">
-            {artist && <p className="art-detail-artist">{artist}</p>}
-            {year && <p className="art-detail-year">{year}</p>}
-            {technique && <p className="art-detail-technique">{technique}</p>}
+            
+            {technique && <p className="art-detail-technique">Marco Cavalcanti – Artista Visual e Mestre em Teoria da Arte (UFRJ)</p>}
           </div>
           <p className="art-detail-description">
             A obra de Dalton Romão se insere na tradição moderna e contemporânea da desordem como método, atuando num território onde caos, ruptura e assimetria são estruturantes, em contraste com a longa busca ocidental pela ordem e simetria. Sua poética percebe que toda ordem humana é fragmentada e imprecisa, contendo a semente inevitável da desordem.

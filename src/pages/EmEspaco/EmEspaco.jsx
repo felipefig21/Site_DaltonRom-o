@@ -55,7 +55,7 @@ function EmEspaco() {
       id: 2,
       image: exemplo30,
       titulo: 'Hall ou corredor',
-      descricao: 'Primeira impressão que permanece: a obra recebe visitantes com presença marcante. A composição gráfica transforma o espaço de passagem em galeria, estabelecendo o tom sofisticado que permeia toda a residência.'
+      descricao: 'No coração do lar, a obra se torna protagonista sem competir com o espaço. As camadas visuais e texturas criam um ponto focal que convida à contemplação, integrando-se perfeitamente à estética clean e atemporal do ambiente.'
     },
     {
       id: 3,
@@ -67,7 +67,7 @@ function EmEspaco() {
       id: 4,
       image: exemplo32,
       titulo: 'Quartos',
-      descricao: 'Em espaços privados, a obra estabelece conexão emocional e intimidade. A composição permite múltiplas leituras, revelando novos detalhes e interpretações conforme a luz natural e o estado de espírito de quem contempla, criando um refúgio pessoal.'
+      descricao: 'Primeira impressão que permanece: a obra recebe visitantes com presença marcante. A composição gráfica transforma o espaço de passagem em galeria, estabelecendo o tom sofisticado que permeia toda a residência.'
     },
     {
       id: 5,
@@ -79,24 +79,24 @@ function EmEspaco() {
       id: 6,
       image: exemplo35,
       titulo: 'Residência com curadoria estética',
-      descricao: 'A obra integra uma coleção artística pensada com atenção aos detalhes. A composição dialoga harmoniosamente com mobiliário de design e elementos decorativos selecionados, criando uma narrativa visual coesa que reflete refinamento e personalidade.'
+      descricao: 'No espaço de trabalho em casa, a obra inspira e motiva. A estética gráfica contemporânea estimula a criatividade, enquanto a composição equilibrada mantém a atmosfera propícia à concentração e produtividade.'
     },
     {
       id: 7,
       image: exemplo36,
       titulo: 'Salas sociais',
-      descricao: 'No coração do lar, a obra se torna protagonista dos momentos de convivência. A composição estabelece diálogo com os elementos do ambiente, criando um ponto focal que estimula conversas e enriquece o espaço de reunião com sofisticação e caráter.'
+      descricao: 'Transformando a circulação em experiência artística, a gravura redefine o conceito de espaço útil. A iluminação direcionada realça texturas e detalhes, criando um percurso visual que surpreende a cada passagem.'
     },
     {
       id: 8,
       image: exemplo38,
       titulo: 'Ambiente Criativo e inspirador',
-      descricao: 'No espaço de trabalho ou estúdio, a obra estimula a criatividade e a produtividade. A estética gráfica contemporânea inspira novas ideias, enquanto a composição equilibrada mantém a atmosfera propícia à concentração e ao fluxo criativo.'
+      descricao: 'Em espaços privados, a obra estabelece conexão emocional com o observador. A composição permite múltiplas leituras, revelando novos detalhes e interpretações conforme a luz e o estado de espírito de quem contempla.'
     },
     {
       id: 9,
       image: exemplo42,
-      titulo: 'Sala de Jantar Contemporânea',
+      titulo: 'Cafeteria boutique',
       descricao: 'Companhia silenciosa para momentos de convívio, a gravura enriquece o ambiente social. A obra funciona como catalisador de conversas, adicionando camadas de significado e sofisticação aos encontros ao redor da mesa.'
     }
   ]
@@ -108,7 +108,7 @@ function EmEspaco() {
       <main className="em-espaco-content">
         <div className="em-espaco-hero">
           <h1 className="em-espaco-title">EM ESPAÇO</h1>
-          <p className="em-espaco-subtitle">Veja como as gravuras transformam diferentes ambientes</p>
+          <p className="em-espaco-subtitle"></p>
         </div>
 
         <div className="espacos-container">

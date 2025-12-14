@@ -7,7 +7,7 @@ function Footer() {
       <div className="footer-brand">
         
         <h2 className="footer-name">Dalton Romão </h2> 
-        <p className="footer-subtitle">GRAVURAS CONTEMPORANEAS EM EDICAO LIMITADA</p>
+        <p className="footer-subtitle">Não me interessa a imagem como ornamento. Trabalho com imagem como atrito: entre memória e ruído, <br /> entre corpo e excesso, entre presença e colapso.</p>
       </div>
       <div className="social-icons">
         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="social-icon-circle">

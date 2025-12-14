@@ -13,12 +13,12 @@
 }
 
 .gallery-header {
-  text-align: center;
+  text-align: start;
   margin-bottom: 50px;
 }
 
 .gallery-page-title {
-  font-size: 48px;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 15px;
   margin-top: 50px;
@@ -26,6 +26,13 @@
 }
 
 .gallery-subtitle {
+  margin: 0;
+}
+
+.gallery-subtitle h2 {
+  font-family: 'Trade Gothic Condensed';
+  font-weight: normal;
+  font-style: normal;
   font-size: 18px;
   color: #2B2B2B;
   margin: 0;
@@ -191,7 +198,7 @@
     margin-bottom: 10px;
   }
 
-  .gallery-subtitle {
+  .gallery-subtitle h2 {
     font-size: 15px;
   }
 
