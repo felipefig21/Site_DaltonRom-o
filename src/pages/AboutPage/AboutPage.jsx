@@ -24,36 +24,24 @@ function AboutPage() {
             <div className="about-page-text">
               
               <p>
-                <p>Dalton Romão é um artista cuja pesquisa se
-                concentra na colagem expandida e na memória
-                gráfica. Após anos atuando na criação visual e na
-                direção de arte, passou a revisitar referências que
-                marcaram sua formação-a publicidade
-                americana dos anos 1950, o design editorial
-                mid-century e a cultura impressa - desenvolvendo
-                uma linguagem própria baseada na recombinação
-                de fragmentos visuais. </p>
+                <p> Dalton Romão é artista visual cuja prática investiga a imagem como campo de experiência e tensão, a partir do atrito entre memória gráfica,
+                    cultura de massa e o excesso visual contemporâneo. Seu trabalho se desenvolve na interseção entre história da imagem, linguagem publicitária 
+                    e economia da atenção, tratando o repertório visual moderno como matéria sujeita a deslocamentos e reconfigurações contínuas. 
+                </p>
 
-                <p>Entre 2013 e 2020, experimentou sobreposições,
-                ruídos, rasgos e texturas, reorganizando arquivos,
-                fotografias e materiais de época em novas relações.
-                A partir de 2020, dedica-se integralmente a essa
-                prática, articulando vestígios gráficos, elementos
-                tipográficos e superfícies estratificadas para
-                explorar tensões entre passado e presente.
+                <p>Com trajetória ligada à criação visual e à direção de arte, Romão construiu um vocabulário próprio no qual fragmentação, sobreposição 
+                    e ruído operam como procedimentos estruturais. Em sua prática, esses elementos não funcionam como estilo, mas como método crítico 
+                    para lidar com a saturação da imagem e com a naturalização do consumo visual
                 </p>
                 <p>
-                Romão já participou de mais de 20 exposições,
-                entre individuais e coletivas, apresentando sua obra
-                em diferentes contextos e espaços culturais. Sua
-                prática propõe uma poética em que fragmento,
-                instabilidade e excesso se tornam linguagem.
+                A imagem deixa de atuar como superfície ilustrativa e passa a operar como dispositivo de interrupção do olhar automático, 
+                exigindo tempo, atenção e leitura prolongada. A linguagem da publicidade surge como operador central da pesquisa, não como comentário 
+                irônico, mas como estrutura de circulação e produção de sentido.
                 </p>
                 <p>
-                Cria imagens que funcionam como pequenas
-                arqueologias do olhar, nas quais memória e
-                desordem constroem as tensões visuais do mundo
-                contemporâneo.
+                      As obras se organizam em núcleos de investigação continuada, construídos por repetição e variação controlada. 
+                      Formalmente, os trabalhos se estruturam por camadas e interferências que tensionam a legibilidade sem anulá-la, sustentando-se 
+                      como experiências visuais autônomas no contexto contemporâneo.
                 </p>
               </p>
             </div>

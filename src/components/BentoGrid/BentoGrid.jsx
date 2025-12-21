@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './BentoGrid.css'
 import { imagensBentoGrid } from '../../data/artworks'
-import Lightbox from '../Lightbox/Lightbox'
+import ExpandedImage from '../ExpandedImage/ExpandedImage'
 
 function BentoGrid() {
   const [selectedIndex, setSelectedIndex] = useState(null)
@@ -52,7 +52,7 @@ function BentoGrid() {
       </div>
 
       {selectedIndex !== null && (
-        <Lightbox
+        <ExpandedImage
           artwork={displayArtworks[selectedIndex]}
           onClose={handleClose}
           onNext={handleNext}

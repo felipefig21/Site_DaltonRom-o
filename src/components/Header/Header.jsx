@@ -30,10 +30,11 @@ function Header() {
   const isHome = location.pathname === '/'
   const isGallery = location.pathname === '/galeria'
   const isEmEspaco = location.pathname === '/em-espaco'
+  const isAbout = location.pathname === '/sobre'
 
   return (
     <>
-      <header className={`header ${scrolled && !isGallery && !isEmEspaco ? 'header-scrolled' : ''} ${!isHome && !isGallery && !isEmEspaco ? 'header-solid' : ''} ${isGallery || isEmEspaco ? 'header-black' : ''}`}>
+      <header className={`header ${scrolled && !isGallery && !isEmEspaco && !isAbout ? 'header-scrolled' : ''} ${!isHome && !isGallery && !isEmEspaco && !isAbout ? 'header-solid' : ''} ${isGallery || isEmEspaco || isAbout ? 'header-black' : ''}`}>
         <div className="header-container">
           <Link to="/" className="artist-name-link">
             <h1 className="artist-name">DALTON ROMÃO</h1>

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Carousel.css'
 import { imagensCarrossel } from '../../data/artworks'
-import Lightbox from '../Lightbox/Lightbox' // Importar o Lightbox
+import ExpandedImage from '../ExpandedImage/ExpandedImage'
 
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -84,7 +84,7 @@ function Carousel() {
       </div>
 
       {isLightboxOpen && selectedArtworkIndex !== null && (
-        <Lightbox
+        <ExpandedImage
           artwork={imagensCarrossel[selectedArtworkIndex]}
           onClose={closeLightbox}
           onNext={showNextArtwork}

@@ -66,16 +66,7 @@ export const imagensGaleria = [
     dimensions: "100 x 70 cm",
     description: "Estudo sobre a fragmentação e o acúmulo como método compositivo."
   },
-  {
-    id: 5,
-    title: "Gravura 5",
-    image: galeriaImg5,
-    year: "2024",
-    category: "Gravura Contemporânea",
-    technique: "Colagem Expandida",
-    dimensions: "100 x 70 cm",
-    description: "Planificação da desordem: onde caos e estrutura coexistem em tensão criativa."
-  },
+  
   {
     id: 6,
     title: "Mistura Perfeita",
@@ -108,9 +99,9 @@ export const imagensGaleria = [
   },
   {
     id: 9,
-    title: "Gravura 9",
+    title: "Escala em Paris",
     image: galeriaImg9,
-    year: "2023",
+    year: "2025",
     category: "Gravura Contemporânea",
     technique: "Colagem Expandida",
     dimensions: "100 x 70 cm",
@@ -155,87 +146,9 @@ export const imagensGaleria = [
     technique: "Colagem Expandida",
     dimensions: "100 x 70 cm",
     description: "Exploração das formas urbanas e sua relação com a memória visual coletiva."
-  },
-  {
-    id: 14,
-    title: "Gravura 14",
-    image: galeriaImg14,
-    year: "2025",
-    category: "Gravura Contemporânea",
-    technique: "Colagem Expandida",
-    dimensions: "70x50cm",
-    description: "Investigação sobre as possibilidades da arte na era digital e suas reverberações."
-  },
-  {
-    id: 15,
-    title: "Gravura 15",
-    image: galeriaImg15,
-    year: "2023",
-    category: "Gravura Contemporânea",
-    technique: "Colagem Expandida",
-    dimensions: "70x50cm",
-    description: "Meditação visual sobre a calma e o silêncio em meio ao ruído contemporâneo."
-  },
-  {
-    id: 16,
-    title: "Gravura 16",
-    image: galeriaImg16,
-    year: "2024",
-    category: "Gravura Contemporânea",
-    technique: "Colagem Expandida",
-    dimensions: "70x50cm",
-    description: "Padrões orgânicos e cores vibrantes em diálogo com a natureza urbana."
-  },
-  {
-    id: 17,
-    title: "Gravura 17",
-    image: galeriaImg17,
-    year: "2023",
-    category: "Gravura Contemporânea",
-    technique: "Colagem Expandida",
-    dimensions: "70x50cm",
-    description: "Representação das lembranças que nos moldam através de camadas visuais."
-  },
-  {
-    id: 18,
-    title: "Gravura 18",
-    image: galeriaImg18,
-    year: "2023",
-    category: "Gravura Contemporânea",
-    technique: "Colagem Expandida",
-    dimensions: "70x50cm",
-    description: "Estudo sobre a interação entre cores complementares e suas ressonâncias emocionais."
-  },
-  {
-    id: 19,
-    title: "Gravura 19",
-    image: galeriaImg19,
-    year: "2023",
-    category: "Gravura Contemporânea",
-    technique: "Colagem Expandida",
-    dimensions: "70x50cm",
-    description: "Exploração das formas puras e da expressão não figurativa em linguagem contemporânea."
-  },
-  {
-    id: 20,
-    title: "Gravura 20",
-    image: galeriaImg20,
-    year: "2022",
-    category: "Gravura Contemporânea",
-    technique: "Colagem Expandida",
-    dimensions: "70x50cm",
-    description: "Capturando a energia e o dinamismo do movimento em composição estática."
-  },
-  {
-    id: 21,
-    title: "Gravura 21",
-    image: galeriaImg21,
-    year: "2022",
-    category: "Gravura Contemporânea",
-    technique: "Colagem Expandida",
-    dimensions: "70x50cm",
-    description: "Homenagem às texturas ricas e variadas encontradas na natureza e na memória visual."
   }
+  
+  
 ]
 
 // ============================================
@@ -374,7 +287,102 @@ export const imagensCarrossel = [
     technique: "Colagem Expandida",
     dimensions: "70x50cm",
     description: "Sobreposição de tempos e referências em diálogo constante."
+  }]
+// ============================================
+// IMAGENS DAS SOBRAS
+// ============================================
+export const imagem_sobras = [  
+  {
+    id: 5,
+    title: "Gravura 5",
+    image: galeriaImg5,
+    year: "2024",
+    category: "Gravura Contemporânea",
+    technique: "Colagem Expandida",
+    dimensions: "100 x 70 cm",
+    description: "Planificação da desordem: onde caos e estrutura coexistem em tensão criativa."
+  },
+  {
+    id: 14,
+    title: "Gravura 14",
+    image: galeriaImg14,
+    year: "2025",
+    category: "Gravura Contemporânea",
+    technique: "Colagem Expandida",
+    dimensions: "70x50cm",
+    description: "Investigação sobre as possibilidades da arte na era digital e suas reverberações."
+  },
+  {
+    id: 15,
+    title: "Gravura 15",
+    image: galeriaImg15,
+    year: "2023",
+    category: "Gravura Contemporânea",
+    technique: "Colagem Expandida",
+    dimensions: "70x50cm",
+    description: "Meditação visual sobre a calma e o silêncio em meio ao ruído contemporâneo."
+  },
+  {
+    id: 16,
+    title: "Gravura 16",
+    image: galeriaImg16,
+    year: "2024",
+    category: "Gravura Contemporânea",
+    technique: "Colagem Expandida",
+    dimensions: "70x50cm",
+    description: "Padrões orgânicos e cores vibrantes em diálogo com a natureza urbana."
+  },
+  {
+    id: 17,
+    title: "Gravura 17",
+    image: galeriaImg17,
+    year: "2023",
+    category: "Gravura Contemporânea",
+    technique: "Colagem Expandida",
+    dimensions: "70x50cm",
+    description: "Representação das lembranças que nos moldam através de camadas visuais."
+  },
+  {
+    id: 18,
+    title: "Gravura 18",
+    image: galeriaImg18,
+    year: "2023",
+    category: "Gravura Contemporânea",
+    technique: "Colagem Expandida",
+    dimensions: "70x50cm",
+    description: "Estudo sobre a interação entre cores complementares e suas ressonâncias emocionais."
+  },
+  {
+    id: 19,
+    title: "Gravura 19",
+    image: galeriaImg19,
+    year: "2023",
+    category: "Gravura Contemporânea",
+    technique: "Colagem Expandida",
+    dimensions: "70x50cm",
+    description: "Exploração das formas puras e da expressão não figurativa em linguagem contemporânea."
+  },
+  {
+    id: 20,
+    title: "Gravura 20",
+    image: galeriaImg20,
+    year: "2022",
+    category: "Gravura Contemporânea",
+    technique: "Colagem Expandida",
+    dimensions: "70x50cm",
+    description: "Capturando a energia e o dinamismo do movimento em composição estática."
+  },
+  {
+    id: 21,
+    title: "Gravura 21",
+    image: galeriaImg21,
+    year: "2022",
+    category: "Gravura Contemporânea",
+    technique: "Colagem Expandida",
+    dimensions: "70x50cm",
+    description: "Homenagem às texturas ricas e variadas encontradas na natureza e na memória visual."
   }
+
 ]
 
 // ============================================
@@ -449,6 +457,7 @@ export const imagensBentoGrid = [
     description: "Obra que celebra a instabilidade e o ruído como elementos expressivos."
   }
 ]
+
 
 // Manter compatibilidade com código existente
 export const artworks = imagensGaleria

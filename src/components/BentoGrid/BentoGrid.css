@@ -90,16 +90,12 @@
   right: 0;
   bottom: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent 60%);
-  display: flex;
+  display: none;
   align-items: flex-end;
   justify-content: flex-start;
   padding: 25px;
   opacity: 0;
   transition: opacity 0.4s ease;
-}
-
-.bento-item:hover .bento-item-overlay {
-  opacity: 1;
 }
 
 .bento-item-content {
