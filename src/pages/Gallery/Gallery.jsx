@@ -50,16 +50,7 @@ function Gallery() {
       
       <main className="gallery-content">
         <div className="gallery-header">
-          <h1 className="gallery-page-title">As gravuras de Dalton Romão são produzidas em edições limitadas de 25 exemplares, 
-            datadas e assinadas. Impressas em Giclée sobre papéis artísticos importados, preservam 
-            a densidade cromática, o gesto e a textura das obras originais.</h1>
-            <div className='gallery-subtitle'>
-              <h2 >VER MAIS OBRAS E PROCESSOS EM @DALTONROMAO</h2> 
-
-            </div>
-
-
-          
+          <h1 className="gallery-page-title">GALERIA</h1>
         </div>
 
         {/* Grid de obras */}
