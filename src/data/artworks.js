@@ -388,7 +388,7 @@ export const imagem_sobras = [
 // ============================================
 // IMAGENS DO BENTOGRID
 // ============================================
-import bentoImg1 from './gravuras/grav11.jpg'
+import bentoImg1 from './grav-bentogrid/grav153.jpg'
 import bentoImg2 from './grav-bentogrid/grav27.jpg'
 import bentoImg3 from './grav-bentogrid/grav37.jpg'
 import bentoImg4 from './grav-bentogrid/grav38.jpg'
