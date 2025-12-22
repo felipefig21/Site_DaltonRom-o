@@ -29,12 +29,11 @@ function Header() {
   // Determinar se está na home
   const isHome = location.pathname === '/'
   const isGallery = location.pathname === '/galeria'
-  const isEmEspaco = location.pathname === '/em-espaco'
   const isAbout = location.pathname === '/sobre'
 
   return (
     <>
-      <header className={`header ${scrolled && !isGallery && !isEmEspaco && !isAbout ? 'header-scrolled' : ''} ${!isHome && !isGallery && !isEmEspaco && !isAbout ? 'header-solid' : ''} ${isGallery || isEmEspaco || isAbout ? 'header-black' : ''}`}>
+      <header className={`header ${scrolled && !isGallery && !isAbout ? 'header-scrolled' : ''} ${!isHome && !isGallery && !isAbout ? 'header-solid' : ''} ${isGallery || isAbout ? 'header-black' : ''}`}>
         <div className="header-container">
           <Link to="/" className="artist-name-link">
             <h1 className="artist-name">DALTON ROMÃO</h1>
