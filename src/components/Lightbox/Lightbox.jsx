@@ -63,12 +63,8 @@ function Lightbox({ artwork, onClose, onNext, onPrev }) {
           <div className="lightbox-details">
             <p><strong>Ano:</strong> {artwork.year}</p>
             <p><strong>Categoria:</strong> {artwork.category}</p>
-            <p><strong>Técnica:</strong> {artwork.technique}</p>
             <p><strong>Dimensões:</strong> {artwork.dimensions}</p>
           </div>
-          {artwork.description && (
-            <p className="lightbox-description">{artwork.description}</p>
-          )}
         </div>
       </div>
     </div>
