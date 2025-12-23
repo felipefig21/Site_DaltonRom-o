@@ -2,7 +2,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 import './WhatsAppButton.css'
 
 function WhatsAppButton() {
-  const phoneNumber = '5511999999999' // Substitua pelo número real
+  const phoneNumber = '5521994488270' // Substitua pelo número real
   const message = 'Olá! Gostaria de saber mais sobre as gravuras.'
 
   const handleClick = () => {

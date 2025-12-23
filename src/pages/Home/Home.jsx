@@ -20,14 +20,7 @@ function Home() {
       <AboutSection />
       <FeaturedArt />
       <BentoGrid />
-      <ArtDetail
-        image="/path/to/artwork.jpg"
-        title="Título da Obra"
-        artist="Dalton"
-        year="2024"
-        technique="Técnica Mista sobre Tela"
-        description="Esta obra representa uma exploração profunda dos contrastes entre luz e sombra, vida e morte, esperança e desespero. Através de camadas complexas de tinta e textura, a peça convida o observador a uma jornada introspectiva, questionando a natureza efêmera da existência humana e a beleza encontrada nos momentos de transição."
-      />
+      <ArtDetail />
       <Carousel />
       <Footer />
       <WhatsAppButton />

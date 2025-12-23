@@ -1,14 +1,22 @@
+import { useState } from 'react'
 import './ArtDetail.css'
 import imageh from './grav39.png'
+import ExpandedImage from '../ExpandedImage/ExpandedImage'
+
 function ArtDetail({ image, title, description, artist, year, technique }) {
+  const [isExpanded, setIsExpanded] = useState(false)
+
+  const currentImage = image || imageh
+  const currentTitle = title || 'A PLANIFICAÇÃO DA DESORDEM'
+
   return (
     <section className="art-detail">
       <div className="art-detail-container">
         <div className="art-detail-text animate-on-scroll fade-in-left">
           <h2 className="art-detail-title">A PLANIFICAÇÃO DA DESORDEM  </h2>
           <div className="art-detail-meta">
-            
-            {technique && <p className="art-detail-technique">Marco Cavalcanti – Artista Visual e Mestre em Teoria da Arte (UFRJ)</p>}
+
+            <p className="art-detail-technique">Marco Cavalcanti – Artista Visual e Mestre em Teoria da Arte (UFRJ)</p>
           </div>
           <p className="art-detail-description">
             A obra de Dalton Romão se insere na tradição moderna e contemporânea da desordem como método, atuando num território onde caos, ruptura e assimetria são estruturantes, em contraste com a longa busca ocidental pela ordem e simetria. Sua poética percebe que toda ordem humana é fragmentada e imprecisa, contendo a semente inevitável da desordem.
@@ -18,14 +26,26 @@ function ArtDetail({ image, title, description, artist, year, technique }) {
           <p className='art-detail-description'>A lógica da sobreposição, do fragmento e da saturação faz emergir camadas voláteis que dialogam com a publicidade americana dos anos 1950 e com os resíduos visuais cotidianos (tipografias efêmeras, rasgos, marcas do tempo) sobre superfícies instáveis. Há, em sua obra, um equilíbrio tenso entre acidez e lirismo, entre rigor compositivo e colapso da imagem; Romão opera no limiar entre lembrança e erosão, impressão e pixel, transformando caos em método visual, instabilidade em composição e ruído em expressão do presente.</p>
           <p className='art-detail-description'>Dalton Romão trabalha com o tempo saturado em que vivemos, onde o excesso informacional, a fragmentação e a sobreposição são a gramática do olhar. Sua obra reconhece que a desordem não é descontrole, mas linguagem, memória e presença, sendo a forma possível de traduzir a experiência estética de um mundo que já não cabe na simetria.</p>
         </div>
-        <div className="art-detail-image-wrapper animate-on-scroll slide-rotate delay-300">
+        <div
+          className="art-detail-image-wrapper animate-on-scroll slide-rotate delay-300"
+          onClick={() => setIsExpanded(true)}
+        >
           <img
-            src={imageh}
-            alt={title}
+            src={currentImage}
+            alt={currentTitle}
             className="art-detail-image"
           />
         </div>
       </div>
+
+      {isExpanded && (
+        <ExpandedImage
+          artwork={{ image: currentImage, title: currentTitle }}
+          onClose={() => setIsExpanded(false)}
+          onNext={() => {}}
+          onPrev={() => {}}
+        />
+      )}
     </section>
   )
 }

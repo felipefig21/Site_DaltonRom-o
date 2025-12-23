@@ -10,16 +10,16 @@ function Footer() {
         <p className="footer-subtitle">Não me interessa a imagem como ornamento. Trabalho com imagem como atrito: entre memória e ruído, <br /> entre corpo e excesso, entre presença e colapso.</p>
       </div>
       <div className="social-icons">
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="social-icon-circle">
+        <a href="https://www.instagram.com/daltonromao/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="social-icon-circle">
           <FaInstagram />
         </a>
         <a href="https://api.whatsapp.com/send?phone=5521994488270" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
           <FaWhatsapp />
         </a>
-        <a href="mailto:contato@daltonromao.com" aria-label="Email">
+        <a href="mailto:daltonromao@gmail.com" aria-label="Email">
           <FaEnvelope />
         </a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/dalton-romão-928b1422/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <FaLinkedin />
         </a>
       </div>

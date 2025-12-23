@@ -40,7 +40,7 @@ function Header() {
           </Link>
           
           <div className="header-actions">
-            <a href="#contato" className="contact-btn">
+            <a href="https://api.whatsapp.com/send?phone=5521994488270" className="contact-btn">
               <span>Contato</span>
             </a>
             

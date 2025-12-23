@@ -62,7 +62,7 @@ function Lightbox({ artwork, onClose, onNext, onPrev }) {
           <h2 className="lightbox-title">{artwork.title}</h2>
           <div className="lightbox-details">
             <p><strong>Ano:</strong> {artwork.year}</p>
-            <p><strong>Categoria:</strong> {artwork.category}</p>
+            <p><strong>Técnica:</strong> {artwork.technique}</p>
             <p><strong>Dimensões:</strong> {artwork.dimensions}</p>
           </div>
         </div>
